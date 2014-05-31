@@ -94,7 +94,6 @@ class BrowseScreen(Tkinter.Tk):
         Tkinter.Tk.__init__(self,parent)
         self.key = hashlib.sha256(password).digest()
         self.parent = parent
-        self.queue = Queue.Queue()
         self.geometry("400x500")
         self.infotext = StringVar()
         self.infotext.set("Please enter your information to continue.")
